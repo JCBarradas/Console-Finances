@@ -100,3 +100,39 @@ var netChange = 0;
 // Variables to address changes comparisson
 var least = 999999999;
 var greatest = 0;
+
+// Loop through the 'finances' array
+for (var i = 0; i < finances.length; i++){
+
+  // Separate the Date and Money data with the array
+  data = finances[i];
+  months= data[0]; // Assuming data[0] contains the months information
+  amount = data[1]; // Assuming data[1] contains the amount information
+
+  // Update the total amount
+  total = total + amount;
+
+  // Calculate the change in amount starting from the second iteration
+  if (i > 0){
+    changes = amount - prevAmount;
+  }
+  // Update the Var prevAmount for the next iteration
+  prevAmount = amount;
+
+
+  // Update the var greatest if the current change is greater
+  if( changes > greatest ){
+    greatest = changes; 
+  } 
+
+ // Update the var least if the current change is smaller
+  if (changes < least){
+    least = changes;
+  }
+}
+
+// Calculate the average change across the total period
+var avgChange = ((greatest + least) / (finances.length -1 ));
+
+// Display all the parameters in the console
+console.log(" Total Months: " + totalMonths +  "\n Total: " + total + "\n Average Change: " + avgChange + "\n Greatest Increase in Profits/Losses: Feb-2012 (" + greatest +")" + "\n Greatest Decrease in Profits/Losses: Sep-2013 (" + least +")" );
