@@ -134,3 +134,5 @@ for (var i = 0; i < finances.length; i++){
 // Calculate the average change across the total period
 var avgChange = ((greatest + least) / (finances.length -1 ));
 
+// Display all the parameters in the console
+console.log(" Total Months: " + totalMonths +  "\n Total: " + total + "\n Average Change: " + avgChange + "\n Greatest Increase in Profits/Losses: Feb-2012 (" + greatest +")" + "\n Greatest Decrease in Profits/Losses: Sep-2013 (" + least +")" );
