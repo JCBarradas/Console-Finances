@@ -119,5 +119,19 @@ for (var i = 0; i < finances.length; i++){
   // Update the Var prevAmount for the next iteration
   prevAmount = amount;
 
+
+  // Update the var greatest if the current change is greater
+  if( changes > greatest ){
+    greatest = changes; 
+  } 
+
+ // Update the var least if the current change is smaller
+  if (changes < least){
+    least = changes;
+  }
+
+
+
+
 }
 
