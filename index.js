@@ -109,5 +109,15 @@ for (var i = 0; i < finances.length; i++){
   months= data[0]; // Assuming data[0] contains the months information
   amount = data[1]; // Assuming data[1] contains the amount information
 
+  // Update the total amount
+  total = total + amount;
+
+  // Calculate the change in amount starting from the second iteration
+  if (i > 0){
+    changes = amount - prevAmount;
+  }
+  // Update the Var prevAmount for the next iteration
+  prevAmount = amount;
+
 }
 
