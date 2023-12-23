@@ -87,5 +87,21 @@ var finances = [
   ['Feb-2017', 671099],
 ];
 
-var totalMonths = finances.length
-console.log(totalMonths)
+
+
+
+
+// Initialize variables
+var totalMonths = finances.length //total months
+
+var data = [];
+var months = ""; 
+var amount = 0;
+var prevAmount = 0;
+var total = 0;
+var changes = 0;
+var netChange = 0;
+
+// Variables to address changes comparisson
+var least = 999999999;
+var greatest = 0;
