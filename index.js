@@ -129,9 +129,8 @@ for (var i = 0; i < finances.length; i++){
   if (changes < least){
     least = changes;
   }
-
-
-
-
 }
+
+// Calculate the average change across the total period
+var avgChange = ((greatest + least) / (finances.length -1 ));
 
