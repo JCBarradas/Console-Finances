@@ -87,13 +87,8 @@ var finances = [
   ['Feb-2017', 671099],
 ];
 
-
-
-
-
 // Initialize variables
-var totalMonths = finances.length //total months
-
+var totalMonths = finances.length // Calculate total months
 var data = [];
 var months = ""; 
 var amount = 0;
@@ -105,3 +100,8 @@ var netChange = 0;
 // Variables to address changes comparisson
 var least = 999999999;
 var greatest = 0;
+
+// Loop through the 'finances' array
+for (var i = 0; i < finances.length; i++){
+}
+
