@@ -103,5 +103,11 @@ var greatest = 0;
 
 // Loop through the 'finances' array
 for (var i = 0; i < finances.length; i++){
+
+  // Separate the Date and Money data with the array
+  data = finances[i];
+  months= data[0]; // Assuming data[0] contains the months information
+  amount = data[1]; // Assuming data[1] contains the amount information
+
 }
 
